@@ -7,6 +7,7 @@ RUN apt upgrade -y
 RUN apt install -y wpscan
 RUN apt install -y metasploit-framework
 RUN apt install -y python3
+RUN apt install -y sqlmap
 COPY ./Wordpress/start.sh /usr/local/bin/start.sh
 COPY ./rockyou.txt /home/
 COPY ./sql-injection.py /home/

