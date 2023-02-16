@@ -25,6 +25,7 @@ COPY ./start.sh /usr/local/bin/start.sh
 COPY ./rockyou.txt /home/
 COPY ./discover_psw.sh /home/discover_psw.sh
 COPY ./vnc.sh /home/vnc.sh
+COPY ./rce.txt /home/rce.txt
 COPY ./sql_inj_script.js /home/sql_inj_script.js
 COPY ./mail_masta.txt /home/mail_masta.txt
 COPY ./hash.txt /home/
