@@ -3,16 +3,16 @@ FROM kalilinux/kali-rolling
 EXPOSE 5901
 ENV USER=vncuser
 ENV PASSWORD=password
-RUN apt  update 
-RUN apt upgrade -y 
-#RUN apt install -y kali-linux-headless
-#RUN apt install -y kali-linux-large 
-RUN apt install -y wpscan
-RUN apt install -y nmap
-RUN apt install -y hashcat
-RUN apt install -y dbus-x11
-RUN apt install -y tightvncserver xfce4 xfce4-goodies
-RUN apt install -y firefox-esr
+RUN apt-get update 
+RUN apt-get upgrade -y 
+#RUN apt-get install -y kali-linux-headless
+#RUN apt-get install -y kali-linux-large 
+RUN apt-get install -y wpscan
+RUN apt-get install -y nmap
+RUN apt-get install -y hashcat
+RUN apt-get install -y dbus-x11
+RUN apt-get install -y tightvncserver xfce4 xfce4-goodies
+RUN apt-get install -y firefox-esr
 
 RUN adduser --disabled-password vncuser;
 RUN echo "${USER}:${PASSWORD}" | chpasswd;
